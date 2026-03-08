@@ -61,6 +61,13 @@
   &:focus { inset-block-start: 0; }
 }
 
+/* Persistent subtle scrollbar to prevent layout shift */
+html {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--colour-border) transparent;
+}
+
 /* Layout */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
