@@ -2,3 +2,21 @@
 Thumbs.db
 *.swp
 *~
+
+# Credentials and secrets (defence in depth)
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Node (if tooling is added later)
+node_modules/
+npm-debug.log*
+
+# IDE and editor
+.vscode/
+.idea/
+*.suo
+*.user
