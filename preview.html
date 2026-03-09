@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Preview tool: renders local markdown posts using live blog styles. -->
+  <!-- Open this file in a browser and drop a .md file onto the dropzone. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Preview | nuphirho</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .preview-dropzone {
+      border: 2px dashed var(--colour-border);
+      border-radius: 0.5rem;
+      padding: 4rem 2rem;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition-theme);
+    }
+    .preview-dropzone:hover,
+    .preview-dropzone.preview-dropzone-active {
+      border-color: var(--colour-link);
+      background: var(--colour-tag-bg);
+    }
+    .preview-dropzone-text {
+      color: var(--colour-text-secondary);
+      font-size: 1rem;
+    }
+  </style>
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="https://blog.nuphirho.dev/" class="site-name" aria-label="nuphirho home">nuphirho</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="https://blog.nuphirho.dev/">Home</a>
+        <a href="https://blog.nuphirho.dev/about.html">About</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">Dark</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <div class="container">
+      <article id="post-content" aria-label="Blog post preview">
+        <div class="preview-dropzone" id="dropzone">
+          <p class="preview-dropzone-text">Drop a markdown file here or click to select</p>
+          <input type="file" id="file-input" accept=".md" hidden>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <span>&copy; 2026 Christo Zietsman</span>
+      <span class="footer-links">
+        <a href="https://github.com/czietsman/nuphirho.dev">GitHub</a>
+        <a href="https://www.linkedin.com/in/christo-zietsman/">LinkedIn</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/preview.js"></script>
+</body>
+</html>
