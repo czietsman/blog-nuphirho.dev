@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>Redirecting | nuphirho</title>
+  <script>
+    (function () {
+      var slug = location.pathname.replace(/^\/+|\/+$/g, '');
+      if (slug && slug.indexOf('.') === -1) {
+        location.replace('/post.html?slug=' + encodeURIComponent(slug));
+      } else {
+        location.replace('/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting&hellip;</p>
+</body>
+</html>
