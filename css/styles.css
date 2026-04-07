@@ -253,6 +253,7 @@ a {
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-block-end: 0.75rem;
+  color: #c8a96e;
 }
 
 .post-meta {
@@ -424,6 +425,7 @@ a {
   font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
   font-weight: 700;
   margin-block-end: 0.5rem;
+  color: #c8a96e;
 }
 
 .page-intro p { color: var(--colour-text-secondary); font-size: 1rem; }
