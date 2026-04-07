@@ -119,11 +119,13 @@ body {
 }
 
 .site-nav a {
-  color: var(--colour-text-secondary);
+  font-family: 'DM Mono', monospace;
+  color: #c8a96e;
   text-decoration: none;
   font-size: 0.9375rem;
-  transition: var(--transition-theme);
-  &:hover, &:focus { color: var(--colour-link); }
+  transition: color 0.2s ease;
+  &:hover, &:focus { color: #a8894e; text-decoration: none; }
+  &[aria-current="page"] { color: #a8894e; text-decoration: underline; text-underline-offset: 0.2em; }
 }
 
 /* Theme toggle */
